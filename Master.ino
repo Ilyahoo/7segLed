@@ -44,13 +44,13 @@ void loop(){
 				for (int D4 = 0; D4 < 10; D4++){
 					unsigned long Daba = millis();
 					for (unsigned long Zid = Daba; Zid - Daba < 1000; Daba = millis()){
-						Zebbi1(D1);
+						ebbi1(D1);
 						delay(4);
-						Zebbi2(D2);
+						ebbi2(D2);
 						delay(4);
-						Zebbi3(D3);
+						ebbi3(D3);
 						delay(4);
-						Zebbi4(D4);
+						ebbi4(D4);
 						delay(4);
 					}
 				
@@ -60,25 +60,25 @@ void loop(){
 	}
 }
 
-void Zebbi1(int num){
+void ebbi1(int num){
 	for(int i = 0; i < 4; i++){
 		if (i == 1-1){
 			digitalWrite(Dig[i],HIGH);
 			continue;}
 		digitalWrite(Dig[i],LOW);
 		}
-	Fuck(num);	
+	uck(num);	
 	}
-void Zebbi2(int num){
+void ebbi2(int num){
 	for(int i = 0; i < 4; i++){
 		if (i == 2-1){
 			digitalWrite(Dig[i],HIGH);
 			continue;}
 		digitalWrite(Dig[i],LOW);
 		}
-	Fuck(num);	
+	uck(num);	
 	}
-void Zebbi3(int num){
+void ebbi3(int num){
 	for(int i = 0; i < 4; i++){
 		if (i == 3-1){
 			digitalWrite(Dig[i],HIGH);
@@ -87,16 +87,16 @@ void Zebbi3(int num){
 		}
 	Fuck(num);	
 	}
-void Zebbi4(int num){
+void ebbi4(int num){
 	for(int i = 0; i < 4; i++){
 		if (i == 4-1){
 			digitalWrite(Dig[i],HIGH);
 			continue;}
 		digitalWrite(Dig[i],LOW);
 		}
-	Fuck(num);	
+	uck(num);	
 	}
-void Fuck(int n){
+void uck(int n){
 	byte TheSeg = Seg[n];
 	for (int i = 0; i < 7; i++){
 		int bit = bitRead(TheSeg,i);
